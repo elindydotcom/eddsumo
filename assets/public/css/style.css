@@ -1,0 +1,9 @@
+.appsumo_success_message {
+        background: #d4fbec;
+        border: #9ce8ca solid 1px;
+        padding: 5px 10px;
+        color: #35a076;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+}

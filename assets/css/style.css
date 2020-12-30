@@ -1,0 +1,37 @@
+#appsumo_active_fields {
+    display:none;
+}
+
+
+#appsumo_regular_price_settings {
+        
+        margin-top: 20px;
+        border-top: #f5f5f5 solid 1px;
+        padding-top: 10px;
+}
+
+
+.appsumo_download_csv_btn {
+        display: inline-block;
+        text-decoration: none;
+}
+
+.appsumo-edd-codes-remaining {
+        
+        margin-left: 30px;
+}
+
+.appsumo-edd-codes-redeemed input, .appsumo-edd-codes-remaining input {
+        width : 90px;
+}
+
+#appsumo_regular_price_settings label {
+        display: block;
+}
+
+.appsumo-edd-enabled, .appsumo-edd-codes, .appsumo-edd-codes-redeemed, .appsumo-edd-codes-remaining {
+            display: inline-block;
+    padding-right: 20px;
+    vertical-align: top;
+    margin-bottom: 4px;
+}
