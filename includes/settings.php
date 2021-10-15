@@ -135,7 +135,6 @@ function appsumo_edd_variable_price_settings( $download_id, $price_id, $args ) {
 		<span class="edd-custom-price-option-section-title"><?php esc_html_e( 'Appsumo Settings', 'edd-all-access' ); ?></span>
 
 		<?php
-
 		appsumo_edd_product_settings_field_active( $download_id, $price_id );
 		appsumo_edd_product_settings_field_codes_num( $download_id, $price_id );
 
@@ -161,7 +160,7 @@ function appsumo_edd_variable_price_settings( $download_id, $price_id, $args ) {
 	<?php
 }
 
-add_action( 'edd_download_price_table_row', 'appsumo_edd_variable_price_settings', 10, 3 );
+add_action( 'edd_download_price_option_row', 'appsumo_edd_variable_price_settings', 10, 3 );
 
 
 /**
@@ -180,7 +179,6 @@ function appsumo_edd_settings( $download_id ) {
 		<span class="edd-custom-price-option-section-title"><?php esc_html_e( 'Appsumo Settings', 'edd-all-access' ); ?></span>
 
 		<?php
-
 		appsumo_edd_product_settings_field_active( $download_id );
 		appsumo_edd_product_settings_field_codes_num( $download_id );
 
@@ -227,10 +225,9 @@ function appsumo_edd_download_settings_save( $post_id, $post ) {
 
 		$prices = edd_get_variable_prices( $post_id );
 
-		foreach ( $prices as $price ) {
-
-			if ( 'yes' === $price['appsumo_active'] ) {
-				appsumo_save_download_settings( $post_id, $price['index'] );
+		foreach ( $prices as $key => $price ) {
+            if ( 'yes' === $price['appsumo_active'] ) {
+				appsumo_save_download_settings( $post_id, $key );
 			}
 		}
 
