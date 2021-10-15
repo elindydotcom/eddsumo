@@ -147,6 +147,7 @@ function appsumo_code_exists( $code ) {
 	if ( appsumo_get_code( $code ) ) {
 		return true;
 	}
+    $count = appsumo_get_code( $code );
 
 	return ( $count && $count > 0 );
 }
