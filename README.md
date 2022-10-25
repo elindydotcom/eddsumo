@@ -1,6 +1,8 @@
 # EDD SUMO 
 A WordPress plugin that intgrates Easy Digital Downloads with the APPSUMO sales process to handle redeeming APPSUMO discount codes
 
+***NOTE! This plugin is not compatible with EDD 3.x.  It has only been tested with EDD 2.x!!!***  
+
 # Features of the plugin include:
 * Generate any number of random discount codes to send to AppSumo
 * Creates a customizable landing page to register new users and redeem codes
